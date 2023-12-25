@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .before,
+      .after {
+        line-height: 20px;
+        padding-left: 10px;
+        position: relative;
+      }
+      .before::before {
+        position: absolute;
+        width: 3px;
+        height: 20px;
+        background: #1993ff;
+        content: "";
+        left: 0px;
+      }
+      .after::after {
+        position: absolute;
+        width: 300px;
+        height: 20px;
+        background: #1993ff;
+        content: "";
+        box-sizing: border-box;
+        padding-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="before">伪元素</div>
+    <div class="after">伪元素</div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flexbox ordering example</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 70%;
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      button {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 15%;
+      }
+
+      div {
+        height: 100px;
+        border: 1px solid black;
+      }
+
+      /* Add your flexbox CSS below here */
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      /* 所有 flex 项默认的 order 值是 0。
+order 值大的 flex 项比 order 值小的在显示顺序中更靠后。
+相同 order 值的 flex 项按源顺序显示。所以假如你有四个元素，其 order 值分别是 2，1，1 和 0，那么它们的显示顺序就分别是第四，第二，第三，和第一。
+第三个元素显示在第二个后面是因为它们的 order 值一样，且第三个元素在源顺序中排在第二个后面。 */
+      button:first-child {
+        order: 1;
+      }
+
+      button:last-child {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>Smile</button>
+      <button>Laugh</button>
+      <button>Wink</button>
+      <button>Shrug</button>
+      <button>Blush</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <video
+        controls
+        width="400"
+        height="400"
+        autoplay
+        loop
+        muted
+        poster="xxx.png"
+      >
+        <!-- 使用多个播放源以提高兼容性 -->
+        <source src="xxx.mp4" type="video/mp4" />
+        <source src="xxx.webm" type="video/webm" />
+        <!-- 字幕 -->
+        <track kind="subtitles" src="subtitles_en.vtt" srclang="en" />
+        <p>
+          你的浏览器不支持 HTML5 视频。可点击<a href="xxx.mp4">此链接</a>观看
+        </p>
+      </video>
+    </div>
+  </body>
+</html>

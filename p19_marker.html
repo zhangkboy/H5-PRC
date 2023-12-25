@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 24px;
+        counter-reset: listItem;
+      }
+      li {
+        counter-increment: listItem;
+      }
+      /* li::marker {
+        content: "序号" counter(listItem) ":   ";
+      } */
+      li::marker {
+        content: "- ";
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>这是一句话</li>
+        <li>这是一句话</li>
+        <li>这是一句话</li>
+        <li>这是一句话</li>
+        <li>这是一句话</li>
+        <li>这是一句话</li>
+      </ul>
+    </div>
+  </body>
+</html>

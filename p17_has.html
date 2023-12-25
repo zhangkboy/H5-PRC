@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        background-color: rgb(207, 207, 207);
+        color: rgb(255, 234, 0);
+      }
+      .parent:has(.disabled) {
+        color: rgb(255, 1, 1);
+      }
+      /* .normal {
+        color: #fbfffc;
+      } */
+      .normal:has(.disabled) {
+        color: rgb(66, 28, 255);
+      }
+      .normal:has(+ .disabled) {
+        color: rgb(4, 255, 71);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="padding: 50px">
+      <div class="parent">
+        <div class="normal">普通元素</div>
+        <div class="normal">普通元素</div>
+        <div class="normal">
+          禁用子元素
+          <div class="normal disabled">禁用子元素11</div>
+        </div>
+        <div class="normal">普通元素</div>
+        <div class="normal">普通元素</div>
+        <div class="normal disabled">禁用子元素</div>
+        <div class="normal">普通元素</div>
+      </div>
+    </div>
+    <div style="padding: 50px">
+      <div class="parent">
+        <div class="normal">普通元素</div>
+        <div class="normal">普通元素</div>
+        <div class="normal">普通元素</div>
+      </div>
+    </div>
+  </body>
+</html>

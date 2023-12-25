@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .item {
+        border: 1px solid red;
+      }
+
+      /* ul {
+        display: table;
+        word-spacing: -1em;
+      } */
+      li {
+        border: 1px solid rgb(236, 229, 11);
+        /* display: table; */
+      }
+
+      .good,
+      .lk {
+        display: inline-block;
+        width: 190px;
+        height: 240px;
+        vertical-align: top;
+      }
+
+      .lk {
+        /* width: 190px;
+        height: 240px; */
+        text-decoration: none;
+        position: relative;
+        /* border: 1px solid rgb(23, 2, 2); */
+        /* color: white; */
+      }
+
+      .good1 {
+        background: url(img/1.jpg) left top;
+      }
+
+      .good2 {
+        background: url(img/2.jpg) left top;
+      }
+
+      .title,
+      .price {
+        /* border: 1px solid pink; */
+        color: gray;
+      }
+
+      .content {
+        background-color: white;
+        margin-top: 30px;
+        padding-top: 5px;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        /* border: 1px solid rgb(23, 2, 2); */
+      }
+
+      .logolink,
+      span {
+        /* border: 1px solid rgb(23, 2, 2); */
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        vertical-align: top;
+      }
+      .more2_lk {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      .more2_info_name {
+        height: 48px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        color: #666;
+        -webkit-transition: color 0.2s ease;
+        transition: color 0.2s ease;
+        word-break: break-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      /* .more2_info {
+        padding: 0 20px;
+        height: 65px;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div class="item">
+      <a class="logolink" href=""
+        ><img class="logo" src="img/2.jpg" alt="" /> <span>KC</span></a
+      >
+      <ul class="list">
+        <li class="good good1">
+          <a
+            href="https://www.baidu.com"
+            class="lk lk1"
+            title="懒人沙发椅床上靠背沙发椅子飘窗椅家用卧室 单人座椅阳台无腿落 升级款橘红色 棉麻面料"
+            aria-label="懒人沙发椅床上靠背沙发椅子飘窗椅家用卧室单人座椅阳台无腿落 升级款橘红色 棉麻面料"
+          >
+            <div class="content">
+              <p class="title">
+                懒人沙发椅床上靠背沙发椅子飘窗椅家用卧室单人座椅阳台无腿落
+                升级款橘红色 棉麻面料
+              </p>
+              <div class="price">$200</div>
+            </div>
+          </a>
+        </li>
+        <li class="good good2">
+          <a
+            href="https://www.baidu.com"
+            class="lk lk2"
+            title="懒人沙发椅床上靠背沙发椅子飘窗椅家用卧室 单人座椅阳台无腿落 升级款橘红色 棉麻面料"
+          >
+            <div class="content">
+              <p class="title">懒人沙发升级款橘红色 棉麻面料</p>
+              <div class="price">$400</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="more2_lk"
+            href=" "
+            target="_blank"
+            title="懒人沙发椅床上靠背沙发椅子飘窗椅家用卧室 单人座椅阳台无腿落 升级款橘红色 棉麻面料"
+            aria-label="懒人沙发椅床上靠背沙发椅子飘窗椅家用卧室单人座椅阳台无腿落 升级款橘红色 棉麻面料"
+            clstag="h|keycount|feed|01#pd_061-a"
+          >
+            <div class="more2_img">
+              <div>
+                <img src="img/1.jpg" style="height: 230px; width: 230px" />
+              </div>
+            </div>
+
+            <div class="more2_info">
+              <p class="more2_info_name">
+                懒人沙发椅床上靠背沙发椅子飘窗椅家用卧室单人座椅阳台无腿落
+                升级款橘红色 棉麻面料
+              </p>
+              <div class="mod_price">
+                <i>¥</i
+                ><span class="more2_info_price_txt"
+                  >85.<span class="more2_info_price_txt-decimal">00</span></span
+                >
+              </div>
+            </div>
+
+            <div class="more2_item_hover">
+              <div class="more2_item_delete" title="不喜欢"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

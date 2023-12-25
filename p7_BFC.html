@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        color: #f66;
+        background: #faa;
+        width: 200px;
+        line-height: 100px;
+        text-align: center;
+        margin: 40px;
+      }
+      .parent {
+        overflow: hidden;
+        /* background: rgb(7, 177, 92); */
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        float: left;
+        border: 5px solid #f66;
+      }
+      .aside {
+        width: 100px;
+        height: 150px;
+        float: left;
+        background: rgb(49, 83, 5);
+      }
+
+      .main {
+        height: 200px;
+        background: rgb(221, 248, 226);
+      }
+    </style>
+  </head>
+  <body>
+    <p>AAA</p>
+    <div class="parent">
+      <p>BBB</p>
+    </div>
+
+    <div
+      class="parent1"
+      style="
+        /* border: 1px solid #f66; */
+        overflow: hidden;
+        /* width: 300px; */
+        /* height: 200px; */
+      "
+    >
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+
+    <div>
+      <div class="aside"></div>
+      <div class="main" style="overflow: hidden"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .t1:last-of-type {
+        color: lime;
+        background-color: black;
+        padding: 5px;
+      }
+      p:last-of-type {
+        color: lime;
+        background-color: black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="padding: 50px">
+      <div>
+        <p class="t1">此文本未选中。</p>
+        <p class="t1">此文本已选中！</p>
+      </div>
+
+      <div>
+        <h2 class="t1">此文本未被选中。</h2>
+        <h2 class="t1">此文本被选中。</h2>
+        <p class="t1">此文本选中,它是当前层级的最后一个 `p`。</p>
+      </div>
+    </div>
+
+    <div style="padding: 50px">
+      <div>
+        <p>此文本未选中。</p>
+        <p>此文本已选中！</p>
+      </div>
+
+      <div>
+        <h2>此文本未被选中：它不是一个 `p`。</h2>
+        <p>此文本选中,它是当前层级的最后一个 `p`。</p>
+      </div>
+    </div>
+  </body>
+</html>

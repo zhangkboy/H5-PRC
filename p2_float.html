@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      div,
+      p {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        outline: 0;
+      }
+      body {
+        font-size: 0px;
+      }
+      .d1 {
+        background-color: aqua;
+        width: 400px;
+        height: 400px;
+        font-size: 20px;
+        line-height: 100px;
+        /* vertical-align: top; */
+        /* display: inline-block; */
+      }
+      .d2 {
+        background-color: aquamarine;
+        width: 100px;
+        height: 150px;
+        font-size: 20px;
+        line-height: 50px;
+        /* vertical-align: top; */
+        /* display: inline-block; */
+      }
+      .d3 {
+        background-color: bisque;
+        width: 50px;
+        height: 55px;
+        /* font-size: 20px;
+        line-height: 55px; */
+
+        /* display: inline-block; */
+      }
+      .d4 {
+        background-color: blueviolet;
+        width: 200px;
+        height: 25px;
+        font-size: 20px;
+        float: left;
+      }
+      .d5 {
+        background-color: red;
+
+        font-size: 20px;
+        line-height: 20px;
+      }
+      p {
+        width: 100%;
+        font-size: 20px;
+        background-color: brown;
+      }
+      .clear {
+        clear: both;
+      }
+      /* .parent {
+        height: 55px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="d1">
+      d1
+      <div class="d2">
+        d2
+        <div class="d3">d3</div>
+      </div>
+    </div>
+    <div class="parent">
+      <div class="d5">d4</div>
+      <div class="parent">
+        <div class="d4">d5</div>
+        <div class="d4">d6</div>
+      </div>
+    </div>
+    <!-- 清除浮动 -->
+    <div class="clear"></div>
+    <p>111111</p>
+    <div class="d1">d6</div>
+  </body>
+</html>
